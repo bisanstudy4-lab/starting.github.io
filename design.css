@@ -1,11 +1,11 @@
 body{
-    background-color:rgb(44, 196, 122);
+    background-color:#c6e2fdda;
 }
 h1{
-    color:rgb(216, 219, 214);
+    color:rgb(15, 90, 211);
     text-align: center;
     font-size: 30px;
-    text-shadow: 1px 1px 1px rgb(235, 207, 0);
+    text-shadow: 1px 1px 1px rgb(223, 119, 119);
 }
 #mainClasses{
     color:rgb(255, 255, 255);
@@ -15,29 +15,31 @@ h1{
     gap: 100px;
 }
 #mainClasses img{
-    width:45%;
-    max-width: 400px;
+    width:300px;
     height:auto;
     border-radius:10px;
 }
 .itembook>p{
-    background-color:seagreen;
+    background-color:rgb(133, 195, 160);
     margin:10px;
+   font-family: 'Cairo', sans-serif;
     padding :10px;
     border-radius:5px;
     border:1px solid rgb(129, 128, 114);
-    font-size: 25px;
+    font-size: 15px;
     text-align:center;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
 }
 #classification{
     display:flex;
-    
+    flex-wrap: wrap;
     gap:30px;
+    justify-content: center;
     
 }
 .itembook img{
-    max-width:300px;
-    height:auto;
-    border: 5px solid rgb(247, 225, 63);
+    max-width:150px;
+   height: 200px;
+   object-fit: cover;
+    border: 2px solid rgb(247, 225, 63);
 }
