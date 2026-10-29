@@ -19,7 +19,7 @@ div{
 form {
     display: flex;
     flex-direction: column;    /* لتكون العناصر تحت بعضها البعض (الإنبوت فوق والزر تحت) */
-    align-items: center;       /* لتوسيط الإنبوت والزر في المنتصف تماماً */
+    align-items:flex-end;       /* لتوسيط الإنبوت والزر في المنتصف تماماً */
     gap: 15px;                 /* مسافة مرتبة بين صندوق النص والزر */
 }
 #beginning{
@@ -72,19 +72,18 @@ a{
     padding :5px;
     align-items:center;
 }
-#imageSearch{
-    background-color:rgb(163, 102, 207);
-    border-radius:5px;
-    width:100px;
-    height:30px;
-    align-items:center;
-    align-content:center;
-    justify-content:center;
+#advanced div{
+    display:flex;
+     align-items:flex-end;
+     justify-content: center;
+     gap: 15px;  
 }
-#advancedSearch{
-    background-color:rgb(163, 102, 207);
-    border-radius:5px;
-    width:130px;
-    height:30px;
-    align-items:center;
+#advanced input[type="text"] {
+    width:400px;
+    height:40px;
+    border-radius: 24px;
+    transition: box-shadow 0.2s ease;
+}
+h2{
+text-align:initial;
 }

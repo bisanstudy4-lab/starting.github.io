@@ -2,9 +2,96 @@
 <html>
     <head>
         <title>Advanced search</title>
-        <link rel="stylesheet" href="indexx.css">
+        <link rel="stylesheet" href="advaced.css">
     </head>
     <body>
-        
+        <h1 style="text-align:justify; font-size:30px; margin:20px;padding:20px;">Google</h1>
+        <hr>
+        <h2 style="font-size:35px;color:rgba(28, 28, 28, 0.763);">Advanced Search</h2>
+         <h2 style="font-size:25px;color:black;">Find pages with</h2><br>
+       <div id="advanced">
+        <form Action="https://www.google.com/search">
+          <div> All of these words:
+            <input type="text" name="as_q"></div>
+            <div>
+            This exact word or phrase:
+            <input type="text" name="as_epq"> </div> 
+            <div>None of these words:
+             <input type="text" name="as_eq"></div> 
+             <div>Site or domain:
+              <input type="text" name="as_sitesearch"></div>
+             <h2 style="font-size:25px;color:black;">Then narrow your results by</h2> 
+            <div>File type:
+             <select name="as_filetype" id="filetype">
+    <option value="">any format</option>
+    <option value="pdf">Adobe Acrobat PDF (.pdf)</option>
+    <option value="ps">Adobe PostScript (.ps)</option>
+    <option value="dwf">Autodesk DWF (.dwf)</option>
+    <option value="kml">Google Earth KML (.kml)</option>
+    <option value="kmz">Google Earth KMZ (.kmz)</option>
+    <option value="xls">Microsoft Excel (.xls)</option>
+    <option value="ppt">Microsoft PowerPoint (.ppt)</option>
+    <option value="doc">Microsoft Word (.doc)</option>
+    <option value="rtf">Rich Text Format (.rtf)</option>
+    <option value="swf">Shockwave Flash (.swf)</option>
+</select></div>
+<div>Last update:
+    <select name="as_qdr">
+    <option value="all">Anytime</option>
+    <option value="h">past hour</option>
+    <option value="d">Past 24 hours</option>
+    <option value="w">Past week</option>
+    <option value="m">Past month</option>
+    <option value="y">Past year</option>
+    </select>
+</div>
+<div>Language:
+    <select name="lr" id="language">
+    <option value="">any language</option>
+    <option value="lang_ar">Arabic</option>
+    <option value="lang_en">English</option>
+    <option value="lang_fr">French</option>
+    <option value="lang_es">Spanish</option>
+    <option value="lang_de">German</option>
+    <option value="lang_it">Italian</option>
+    <option value="lang_ru">Russian</option>
+    <option value="lang_zh-CN">Chinese (Simplified)</option>
+    <option value="lang_zh-TW">Chinese (Traditional)</option>
+    <option value="lang_ja">Japanese</option>
+    <option value="lang_ko">Korean</option>
+    <option value="lang_tr">Turkish</option>
+    <option value="lang_pt">Portuguese</option>
+    <option value="lang_hi">Hindi</option>
+    <option value="lang_ur">Urdu</option>
+</select>
+</div>
+<div>Region:
+    <select name="cr">
+        <option value="">any region</option>
+        <option value="countryAF">Afghanistan</option>
+        <option value="countryAL">Albania</option>
+        <option value="countryDZ">Algeria</option>
+        <option value="countryAS">American Samoa</option>
+        <option value="countryAD">Andorra</option>
+        <option value="countryAO">Angola</option>
+        <option value="countryJO">Jordan</option>
+        <option value="countrySA">Saudi Arabia</option>
+        <option value="countryAE">United Arab Emirates</option>
+        <option value="countryUS">United States</option>
+        <option value="countryGB">United Kingdom</option>
+    </select>
+</div>
+<div> Usage rights:
+    <select name="as_rights">
+        <option value="">Not filtered by licence</option>
+        <option value="cc_publicdomain">Free of charge to use or share</option>
+        <option value="cc_commercial">Free of charge to use or share, even commercially</option>
+        <option value="cc_attribute">Free of charge to use, share or modify</option>
+        <option value="cc_sharealike">Free of charge to use, share or modify, even commercially</option>
+    </select>
+</div>
+            <input type="submit" value="Advanced Search">
+        </form>
+       </div>
     </body>
 </html>
